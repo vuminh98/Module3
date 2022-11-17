@@ -1,0 +1,48 @@
+-- JOIN
+-- được sử dụng để truy vấn dữ liệu kết hợp từ nhiều bảng.
+-- 4 loại JOIN:
+------------------------------------------------------------------------------------------
+---- INNER JOIN:
+-- B1: Xác định bảng chính xuất hiện trong FROM
+-- B2: Chỉ định bảng kết hợp
+-- B3: Chỉ định điều kiện nối.ĐK nối sẽ đứng sau từ ON
+-- cú pháp: SELECT column_name(s)(cột hiển thị) FROM t1(bảng)
+-- 			INNER JOIN t2(bảng) ON join_condition1(ĐK kết nối)
+--			INNER JOIN t3(bảng) ON join_condition2(ĐK kết nối)
+-- .....
+-- 			WHERE conditions;
+-- đơn giản hóa cú pháp:
+-- SELECT column_name(s) FROM t1
+-- INNER JOIN t2 ON t1.column_name = t2.column_name
+-----------------------------------------------------------------------------------------------
+---- LEFT JOIN
+---- RIGHT JOIN
+---- FULL JOIN
+-----------------------------------------------------------------------------------------------
+-- INSERT INTO 
+-- để thêm các hàng dữ liệu mới vào một bảng trong cơ sở dữ liệu.
+-- cú pháp:
+-- + INSERT INTO TABLE_NAME (column1, column2,....)
+-- VALUES(value1, value2,....);
+-- hoặc INSERT INTO TABLE_NAME VALUES (value1, value2,....);
+-- VD: INSERT INTO customers (ID, NAME, AGE, ADDRESS, SALARY)
+-- VALUES (1, 'HA ANH', 32, 'DA NANG', 2000.00);
+-- HOẶC INSERT INTO customers VALUES (7,'LUFFY', 24, 'INDORE', 1000.00 );
+------------------------------------------------------------------------------------------------
+-- CÂU LỆNH SELECT
+-- cú pháp: SELECT column1, column2,.... FROM table_name;
+-- hoặc select * from table_name : để lấy tất cả thông tin từ bảng.
+------------------------------------------------------------------------------------------------
+-- TOÁN TỬ AND 
+-- là một toán tử logic kết hợp hai hay nhiều biểu thức boolean và trả về giá trị True khi cả hai biểu thức đánh giá là true.
+-- và trả về false nếu 1 trong 2 biểu thức là false.
+-- cú pháp: WHERE boolean_expression1 AND boolean_expression2
+-------------------------------------------------------------------------------------------------
+-- TOÁN TỬ OR
+-- kết hợp hai hay nhiều biểu thức boolean, chỉ cần 1 trong 2 điều kiện đúng thì kết quả sẽ là true.
+-- cú pháp : WHERE boolean_expression1 OR boolean_expression2
+-------------------------------------------------------------------------------------------------
+-- TĂNG TỐC ĐỘ TRUY VẤN
+-- CÁC NGUYÊN NHÂN LÀM CHẬM TRUY VẤN:
+-- + Việc thiết kế các bảng cơ sở dữ liệu chưa hợp lý
+-- + 
